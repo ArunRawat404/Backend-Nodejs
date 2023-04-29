@@ -1,4 +1,4 @@
-// The var statement declares a function-scoped or globally-scoped variable whereas const and let and const declares a block-scoped local variable.
+// The var statement declares a function-scoped or globally-scoped variable whereas let and const declares a block-scoped local variable.
 
 // block scope
 
