@@ -22,3 +22,14 @@ fun();
 gun();
 console.log(teacher);
 console.log(content); // Error, as strict mode will restrict auto-globals creation
+
+
+// strict mode in block will allow function to have scope only inside block not global scope
+
+{
+    function fun2() {
+        return "Arun";
+    }
+}
+
+console.log(fun2());  // Error
