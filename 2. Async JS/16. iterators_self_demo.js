@@ -6,11 +6,11 @@ function fetchNextElement(array) {
     let index = 0;
     function next() {
         if (index == array.length) {
-            return undefined;
+            return { value: undefined, done: true };
         }
         const nextElement = array[index];
         index++;
-        return nextElement;
+        return { value: nextElement, done: false };
     }
     return { next };
 }
@@ -18,6 +18,10 @@ function fetchNextElement(array) {
 // inside automaticFetcher variable we store next() function
 const automaticFetcher = fetchNextElement([99, 11, 15, 20, 7, 21, 5])
 
+console.log(automaticFetcher.next());
+console.log(automaticFetcher.next());
+console.log(automaticFetcher.next());
+console.log(automaticFetcher.next());
 console.log(automaticFetcher.next());
 console.log(automaticFetcher.next());
 console.log(automaticFetcher.next());
