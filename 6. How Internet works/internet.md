@@ -245,6 +245,7 @@ export const updateTask = async (req, res) => {
 catch (error) {
       res.send(error);
    }
+}
 ```
 
 <img src="./images/MVC2.PNG"  width="500" height="300">
